@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started with Tailwind CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="antialiased text-slate-600">
+    <!-- npm install -D tailwindcss
+    npx tailwindcss init
+    npx tailwindcss -i tailwind.css -o ./public/css/styles.css --watch -->
+    <section class="px-8 md:px-16 flex flex-col max-w-screen-2xl min-h-screen">
+        <header class="py-8">
+            <a href="#">
+                <img src="logo.svg" class="" alt="">
+            </a>
+        </header>
+        <section class="flex flex-col lg:flex-row md:py-20 gap-20 py-12">
+            <!-- Decription begins -->
+            <section class="flex-1">
+                <h1 class="font-semibold text-slate-800 leading-tight text-6xl ">Join Us at the biggest FrontConf</h1>
+                <p class="mt-2 text-violet-500 text-xl">July-2023 - Bengaluru</p>
+                <p class="mt-4 text lg ">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus optio quis expedita odit itaque
+                    aliquam, odio omnis sunt, commodi ut quos eveniet suscipit error vero velit saepe deleniti nobis
+                    incidunt.
+                </p>
+            </section>
+            <!-- Description Ends -->
+
+            <!-- Subscription section begins -->
+            <section class="flex-1">
+                <div class="bg-white shadow-xl rounded-lg max-w-lg">
+                    <div class="bg-violet-400 p-8 grid rounded-t-lg place-items-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-12 h-12">
+                            <path
+                                d="M19.5 22.5a3 3 0 003-3v-8.174l-6.879 4.022 3.485 1.876a.75.75 0 01-.712 1.321l-5.683-3.06a1.5 1.5 0 00-1.422 0l-5.683 3.06a.75.75 0 01-.712-1.32l3.485-1.877L1.5 11.326V19.5a3 3 0 003 3h15z" />
+                            <path
+                                d="M1.5 9.589v-.745a3 3 0 011.578-2.641l7.5-4.039a3 3 0 012.844 0l7.5 4.039A3 3 0 0122.5 8.844v.745l-8.426 4.926-.652-.35a3 3 0 00-2.844 0l-.652.35L1.5 9.59z" />
+                        </svg>
+                    </div>
+                    <div class="p-10">
+                        <p>Get Notified of all the updates</p>
+                        <form action="" class="flex max-sm:flex-col max-sm:gap-3 mt-3">
+                            <input
+                                class="border flex-grow sm:rounded-r-none border-gray-300 px-4 py-2 rounded-md hover:border-violet-400 focus:outline-none focus:border-violet-500"
+                                type="email" placeholder="Email Address">
+                            <button
+                                class="bg-violet-400 hover:bg-violet-500 sm:rounded-l-none text-white px-4 rounded-md font-semibold py-2">Notify
+                                Me</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Subscribe section ends -->
+
+        </section>
+        <footer class="py-8 mt-auto">
+            <ul class="flex gap-5 text-sm text-white lg:text-slate-500">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </footer>
+    </section>
+</body>
+
+</html>
